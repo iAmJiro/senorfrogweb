@@ -12,7 +12,7 @@ import Navbar from "./components/Navbar.jsx";
 
 createRoot(document.getElementById("root")).render(
   <Router>
-    {/* <Navbar></Navbar> */}
+    <Navbar></Navbar>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/products" element={<Products />} />
