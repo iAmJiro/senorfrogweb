@@ -55,11 +55,11 @@ function Home() {
         </header>
 
         <div class="absolute hidden sm:block md:top-16 sm:top-[8%] top-[10%] xl:top-4 xl:left-[30%] lg:left-[35%] md:right-[20%] sm:left-[18%] left-[10%] overflow-hidden">
-          <img
+          {/* <img
             class="2xl:h-[760px] xl:h-[600px] md:h-[450px] sm:h-[480px]"
             src="https://techakim.com/sam/tg/7268/li/imgs/2.png"
             alt="Image"
-          />
+          /> */}
         </div>
 
         <div class="lg:px-16 px-4 pb-4 h-full flex flex-col sm:flex-row sm:items-center mt-10 sm:mt-0 text-white">
