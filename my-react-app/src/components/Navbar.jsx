@@ -17,16 +17,10 @@ function Navbar() {
             </div>
             <div className="hidden md:flex space-x-16 text-xs tracking-[0.2em]">
               <a href="#" className="hover-line">
-                COLLECTIONS
+                HOME
               </a>
               <a href="#" className="hover-line">
-                BESPOKE
-              </a>
-              <a href="#" className="hover-line">
-                LOOKBOOK
-              </a>
-              <a href="#" className="hover-line">
-                CONTACT
+                ORDER
               </a>
             </div>
             <button
@@ -59,25 +53,13 @@ function Navbar() {
           href="#"
           className="text-2xl tracking-[0.2em] hover:text-white/50 transition-colors"
         >
-          COLLECTIONS
+          HOME
         </a>
         <a
           href="#"
           className="text-2xl tracking-[0.2em] hover:text-white/50 transition-colors"
         >
-          BESPOKE
-        </a>
-        <a
-          href="#"
-          className="text-2xl tracking-[0.2em] hover:text-white/50 transition-colors"
-        >
-          LOOKBOOK
-        </a>
-        <a
-          href="#"
-          className="text-2xl tracking-[0.2em] hover:text-white/50 transition-colors"
-        >
-          CONTACT
+          ORDER
         </a>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import GalleryHome from "./GalleryHome";
+import Footer from "./Footer";
 function Home() {
   return (
     <div className="homeMotherDiv">
@@ -24,7 +25,13 @@ function Home() {
           GET IN TOUCH
         </button>
       </div>
+      <div class="overflow-hidden py-4 sm:py-8 bg-black text-white border-y border-black/20">
+        <div class="whitespace-nowrap marquee inline-block text-[80px] sm:text-[120px] md:text-[180px] font-light leading-none opacity-90">
+          ATHLETE WEAR &nbsp;&nbsp;&nbsp; ATHLETE WEAR &nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
       <GalleryHome></GalleryHome>
+      <Footer></Footer>
     </div>
   );
 }
