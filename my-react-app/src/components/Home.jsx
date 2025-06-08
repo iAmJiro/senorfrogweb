@@ -1,13 +1,13 @@
 import React from "react";
 import "../App.css";
-
+import GalleryHome from "./GalleryHome";
 function Home() {
   return (
     <div className="homeMotherDiv">
       <div className="relative w-full h-screen">
         <div className="absolute inset-0">
           <img
-            src="../public/images/crowd.jpg"
+            src="../public/images/crowd.jpeg"
             alt="Luxury Suit"
             className="w-full h-full object-cover"
           />
@@ -24,6 +24,7 @@ function Home() {
           GET IN TOUCH
         </button>
       </div>
+      <GalleryHome></GalleryHome>
     </div>
   );
 }
