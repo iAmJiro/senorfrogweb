@@ -14,7 +14,7 @@ function Navbar() {
         <div className="max-w-[2000px] mx-auto px-4 sm:px-8">
           <div className="flex justify-between h-24 items-center">
             <div className="text-2xl sm:text-3xl font-light tracking-[0.3em] logo">
-              FOOTBALL NZ
+              FOOTBALL OUTLET NZ
             </div>
             <div className="hidden md:flex space-x-16 text-xs tracking-[0.2em]">
               <Link to="/" className="hover-line">

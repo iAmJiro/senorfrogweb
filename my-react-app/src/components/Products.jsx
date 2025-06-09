@@ -419,6 +419,11 @@ const ProductShowcase = () => {
       })
     );
   };
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const handleAddToCart = (product) => {
+    setSelectedProduct(product);
+  };
 
   return (
     <div className="bg-gray-900 py-26 md:py-16 md:pt-36 min-h-screen">
@@ -443,6 +448,7 @@ const ProductShowcase = () => {
                 >
                   &#8592;
                 </button>
+
                 {/* Right Arrow */}
                 <button
                   onClick={() => handleImageChange(idx, "next")}
@@ -450,7 +456,6 @@ const ProductShowcase = () => {
                 >
                   &#8594;
                 </button>
-                {/* Overlay */}
                 <div className="absolute inset-0 bg-black opacity-10 pointer-events-none"></div>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-900 mt-2 sm:mt-4">
@@ -463,7 +468,10 @@ const ProductShowcase = () => {
                 <span className="text-gray-900 font-bold text-base sm:text-lg">
                   {product.price}
                 </span>
-                <button className="bg-gray-900 text-white py-1 md:px-2 sm:py-2 sm:px-4 rounded-full font-bold hover:bg-gray-800 text-sm md:text-xl w-full sm:w-auto">
+                <button
+                  onClick={() => handleAddToCart(product)}
+                  className="bg-gray-900 text-white py-1 px-2 sm:py-2 sm:px-4 rounded-full font-bold hover:bg-gray-800 text-sm md:text-xl w-full sm:w-auto"
+                >
                   Add to Cart
                 </button>
               </div>
@@ -471,6 +479,35 @@ const ProductShowcase = () => {
           ))}
         </div>
       </div>
+
+      {/* Product Details Modal */}
+      {selectedProduct && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md">
+            <h2 className="text-xl font-bold">{selectedProduct.name}</h2>
+            <p className="text-gray-500">{selectedProduct.description}</p>
+            <div className="flex space-x-2 mt-4">
+              {selectedProduct.images.map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={selectedProduct.name}
+                  className="w-16 h-16 rounded-md"
+                />
+              ))}
+            </div>
+            <p className="text-gray-900 font-bold mt-4">
+              {selectedProduct.price}
+            </p>
+            <button
+              onClick={() => setSelectedProduct(null)}
+              className="mt-4 bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-gray-700"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
