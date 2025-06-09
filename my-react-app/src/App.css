@@ -123,3 +123,6 @@ h2,
 .homeMotherDiv {
   height: 100vh;
 }
+.getInTouchButton {
+  border: red;
+}

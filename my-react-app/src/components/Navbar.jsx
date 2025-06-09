@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 function Navbar() {
   const [menuActive, setMenuActive] = useState(false);
 
@@ -8,7 +9,7 @@ function Navbar() {
   };
 
   return (
-    <div className="bg-black text-white selection:bg-white selection:text-black">
+    <div className="bg-cyan-800 text-white selection:bg-white selection:text-black">
       <nav className="fixed w-full z-50 nav-blur border-b border-white/10">
         <div className="max-w-[2000px] mx-auto px-4 sm:px-8">
           <div className="flex justify-between h-24 items-center">
@@ -16,12 +17,12 @@ function Navbar() {
               FOOTBALL NZ
             </div>
             <div className="hidden md:flex space-x-16 text-xs tracking-[0.2em]">
-              <a href="#" className="hover-line">
+              <Link to="/" className="hover-line">
                 HOME
-              </a>
-              <a href="#" className="hover-line">
+              </Link>
+              <Link to="/products" className="hover-line">
                 ORDER
-              </a>
+              </Link>
             </div>
             <button
               className="md:hidden w-8 h-8 flex flex-col justify-center space-y-2"

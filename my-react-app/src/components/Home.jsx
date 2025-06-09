@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import GalleryHome from "./GalleryHome";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="homeMotherDiv">
@@ -21,7 +22,7 @@ function Home() {
         </div>
 
         {/* Get in Touch Button - Positioned Slightly to the Right */}
-        <button className="absolute bottom-5 left-8 px-6 py-3 border border-white text-white hover:bg-white hover:text-black transition-all duration-500 text-sm tracking-[0.2em]">
+        <button className="absolute bottom-5 left-8 px-6 py-3 border border-yellow-600 text-white hover:bg-white hover:text-black transition-all duration-500 text-sm tracking-[0.2em]">
           GET IN TOUCH
         </button>
       </div>
@@ -30,7 +31,22 @@ function Home() {
           ATHLETE WEAR &nbsp;&nbsp;&nbsp; ATHLETE WEAR &nbsp;&nbsp;&nbsp;
         </div>
       </div>
+      <h1 className="text-center pt-10 text-3xl ">
+        {" "}
+        We offer high quality football tshirts
+      </h1>
       <GalleryHome></GalleryHome>
+      <h1 className="text-center pt-5 text-3xl ">
+        {" "}
+        And many more, check out the products page here
+      </h1>
+      <Link
+        to="/products"
+        className="block w-fit mx-auto px-6 py-3 text-lg font-semibold text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg transition-all"
+      >
+        Products
+      </Link>
+
       <Footer></Footer>
     </div>
   );

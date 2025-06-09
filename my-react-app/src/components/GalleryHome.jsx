@@ -10,10 +10,6 @@ const images = [
   "../public/images/shirtimages/shirt6-1.png",
   "../public/images/shirtimages/shirt7-1.png",
   "../public/images/shirtimages/shirt8-1.png",
-  "../public/images/shirtimages/shirt9-1.png",
-  "../public/images/shirtimages/shirt10-1.png",
-  "../public/images/shirtimages/shirt11-1.jpg",
-  "../public/images/shirtimages/shirt12-1.jpg",
 ];
 
 const GalleryHome = () => {
