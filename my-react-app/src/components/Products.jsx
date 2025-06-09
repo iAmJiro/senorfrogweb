@@ -463,7 +463,7 @@ const ProductShowcase = () => {
   return (
     <div className="bg-gray-900 py-16 md:pt-36">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-8">
           {products.map((product, idx) => (
             <div key={product.id} className="bg-white rounded-lg shadow-lg p-8">
               <div className="relative overflow-hidden group">
