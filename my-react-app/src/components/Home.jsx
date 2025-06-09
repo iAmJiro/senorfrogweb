@@ -36,16 +36,16 @@ function Home() {
         We offer high quality football tshirts
       </h1>
       <GalleryHome></GalleryHome>
-      <h1 className="text-center pt-5 text-3xl ">
-        {" "}
-        And many more, check out the products page here
-      </h1>
       <Link
         to="/products"
-        className="block w-fit mx-auto px-6 py-3 text-lg font-semibold text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg transition-all"
+        className="block w-fit mx-auto px-6 py-3 md:my-4 text-lg font-semibold text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg transition-all"
       >
         Products
       </Link>
+      <h1 className="bg-black text-center pt-5 text-3xl text-white py-4">
+        {" "}
+        And many more, check out the products page here
+      </h1>
 
       <Footer></Footer>
     </div>
