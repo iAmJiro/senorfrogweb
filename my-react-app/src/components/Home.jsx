@@ -9,7 +9,7 @@ function Home() {
       <div className="relative w-full h-screen">
         <div className="absolute inset-0">
           <img
-            src="../public/images/crowd.jpeg"
+            src="../public/images/crowd.jpg"
             alt="Luxury Suit"
             className="w-full h-full object-cover"
           />
