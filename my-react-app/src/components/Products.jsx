@@ -439,6 +439,7 @@ const ProductShowcase = () => {
   };
 
   const [customize, setCustomize] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
   return (
     <div className="bg-gray-900 py-26 md:pt-38 md:pb-4 min-h-screen">
       <div className="container mx-auto px-4">
@@ -498,7 +499,11 @@ const ProductShowcase = () => {
       {/* Product Details Modal */}
       {selectedProduct && modalImages && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 md:pt-10">
-          <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl w-full flex">
+          <div
+            className={`bg-white p-8 rounded-lg shadow-lg ${
+              isExpanded ? "max-w-5xl" : "max-w-4xl"
+            } w-full flex`}
+          >
             <div className="flex flex-col items-start">
               {/* Main Image */}
               <img
@@ -546,8 +551,8 @@ const ProductShowcase = () => {
                 <label className="flex items-center cursor-pointer">
                   <input
                     type="checkbox"
-                    checked={customize}
-                    onChange={() => setCustomize(!customize)}
+                    checked={isExpanded}
+                    onChange={() => setIsExpanded(!isExpanded)}
                     className="mr-2"
                   />
                   <span className="text-gray-900 font-bold">
@@ -556,16 +561,21 @@ const ProductShowcase = () => {
                 </label>
 
                 {/* Inputs Appear to the Right When Checkbox is Checked */}
-                {customize && (
+                {isExpanded && (
                   <>
                     <input
                       type="text"
-                      placeholder="Enter name"
+                      placeholder="Enter Top Name"
+                      className="p-2 border rounded-md w-40"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Enter Bottom Name"
                       className="p-2 border rounded-md w-40"
                     />
                     <input
                       type="number"
-                      placeholder="Enter number"
+                      placeholder="Number"
                       className="p-2 border rounded-md w-20"
                     />
                   </>
@@ -575,12 +585,24 @@ const ProductShowcase = () => {
               <p className="text-gray-900 font-bold mt-4 text-left">
                 {selectedProduct.price}
               </p>
-              <button
-                onClick={() => setSelectedProduct(null)}
-                className="mt-4 bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-gray-700"
-              >
-                Close
-              </button>
+
+              {/* Buttons Section */}
+              {/* Buttons Section - Positioned at the Bottom Right */}
+              {/* Buttons Section - Anchored to the Bottom of the White Box */}
+              <div className="flex justify-end space-x-4 mt-auto">
+                <button
+                  onClick={() => setSelectedProduct(null)}
+                  className="bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-gray-700"
+                >
+                  Close
+                </button>
+                <button
+                  onClick={() => handleNextStep()}
+                  className="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-500"
+                >
+                  Next
+                </button>
+              </div>
             </div>
           </div>
         </div>
