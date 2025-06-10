@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   useLocation,
@@ -9,6 +9,7 @@ import { createRoot } from "react-dom/client";
 import Home from "../src/components/Home.jsx";
 import Products from "./components/Products.jsx";
 import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 
 createRoot(document.getElementById("root")).render(
   <Router>

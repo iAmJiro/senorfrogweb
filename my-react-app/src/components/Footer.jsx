@@ -1,27 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const navLinks = ["Home", "About", "Services", "Media", "Gallery", "Contact"];
+  const navLinks = [
+    { name: "Home", href: "/" },
+    { name: "Order", href: "/products" },
+  ];
+
   const socialLinks = [
     {
-      href: "https://facebook.com",
-      icon: "https://img.icons8.com/fluent/30/000000/facebook-new.png",
-    },
-    {
-      href: "https://linkedin.com",
-      icon: "https://img.icons8.com/fluent/30/000000/linkedin-2.png",
-    },
-    {
-      href: "https://instagram.com",
+      href: "https://www.instagram.com/footballoutlet.nz/?hl=en",
       icon: "https://img.icons8.com/fluent/30/000000/instagram-new.png",
-    },
-    {
-      href: "https://messenger.com",
-      icon: "https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png",
-    },
-    {
-      href: "https://twitter.com",
-      icon: "https://img.icons8.com/fluent/30/000000/twitter.png",
     },
   ];
 
@@ -30,9 +19,9 @@ const Footer = () => {
       {/* Navigation Links */}
       <nav className="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
         {navLinks.map((link, index) => (
-          <a key={index} className="hover:text-gray-900" href="#">
-            {link}
-          </a>
+          <Link key={index} className="hover:text-gray-900" to={link.href}>
+            {link.name}
+          </Link>
         ))}
       </nav>
 

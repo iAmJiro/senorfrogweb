@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "./Footer";
 import shirt3_1 from "/images/shirtimages/shirt3-1.png";
 import shirt4_1 from "/images/shirtimages/shirt4-1.png";
 
@@ -426,7 +427,7 @@ const ProductShowcase = () => {
   };
 
   return (
-    <div className="bg-gray-900 py-26 md:py-16 md:pt-36 min-h-screen">
+    <div className="bg-gray-900 py-26 md:pt-38 md:pb-4 min-h-screen">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {products.map((product, idx) => (
@@ -508,6 +509,7 @@ const ProductShowcase = () => {
           </div>
         </div>
       )}
+      <Footer></Footer>
     </div>
   );
 };
