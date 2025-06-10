@@ -38,7 +38,7 @@ function Home() {
       <GalleryHome></GalleryHome>
       <Link
         to="/products"
-        className="block w-fit mx-auto px-6 py-3 md:my-4 text-lg font-semibold text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg transition-all"
+        className="block w-fit mx-auto px-6 py-3 md:my-4 text-lg font-semibold text-white bg-black rounded-lg shadow-md hover:bg-white hover:text-black hover:shadow-lg transition-all"
       >
         Products
       </Link>
