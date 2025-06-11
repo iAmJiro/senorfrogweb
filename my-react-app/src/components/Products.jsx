@@ -498,6 +498,14 @@ const ProductShowcase = () => {
     document.body.style.overflow = showEmailStep ? "hidden" : "auto";
   }, [showEmailStep]);
 
+  useEffect(() => {
+    if (showEmailStep) {
+      document.body.classList.add("disable-scroll");
+    } else {
+      document.body.classList.remove("disable-scroll");
+    }
+  }, [showEmailStep]);
+
   return (
     <div className="bg-gray-900 py-26 md:pt-38 md:pb-4 min-h-screen">
       <div className="container mx-auto px-4">
@@ -556,7 +564,7 @@ const ProductShowcase = () => {
 
       {/* Product Details Modal */}
       {selectedProduct && modalImages && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4 md:p-10">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4 md:p-10 overflow-hidden h-full">
           {showEmailStep ? (
             <div className="bg-white p-6 md:mt-16 md:p-8 rounded-lg shadow-lg w-full max-w-sm md:max-w-md lg:max-w-lg">
               <h2 className="text-xl md:text-2xl font-bold mb-4 text-center">
@@ -714,7 +722,7 @@ const ProductShowcase = () => {
                   )}
                 </div>
 
-                <div className="relative w-full min-h-[150px]">
+                <div className="overflow-hidden relative w-full min-h-[65px] md:min-h-[150px]">
                   {/* Other modal content */}
 
                   <div className="absolute bottom-0 w-full flex justify-center md:justify-end md:right-4 space-x-4 p-4">
