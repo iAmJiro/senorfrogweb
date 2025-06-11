@@ -466,7 +466,6 @@ const ProductShowcase = () => {
     const templateParams = {
       size: formData.size,
       top_name: formData.topName || "N/A",
-      bottom_name: formData.bottomName || "N/A",
       number: formData.number || "N/A",
       email: formData.email,
     };
@@ -605,7 +604,10 @@ const ProductShowcase = () => {
                 </button>
                 <button
                   className="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-500 text-sm md:text-base"
-                  onClick={() => console.log("Submit order")}
+                  onClick={() => {
+                    console.log("Submit order");
+                    handleNextStep();
+                  }}
                 >
                   Submit
                 </button>
