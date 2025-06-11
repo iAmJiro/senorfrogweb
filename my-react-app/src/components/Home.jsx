@@ -21,19 +21,21 @@ function Home() {
           Elegance in Every Stitch.
         </div>
 
-        {/* Get in Touch Button - Positioned Slightly to the Right */}
-        <button className="absolute bottom-5 left-8 px-6 py-3 border border-yellow-600 text-white hover:bg-white hover:text-black transition-all duration-500 text-sm tracking-[0.2em]">
-          GET IN TOUCH
-        </button>
+        <Link
+          to="/Products"
+          className="absolute bottom-5 left-8 px-6 py-3 border border-yellow-600 text-white hover:bg-white hover:text-black transition-all duration-500 text-sm tracking-[0.2em]"
+        >
+          PRODUCTS
+        </Link>
       </div>
       <div class="overflow-hidden py-4 sm:py-8 bg-black text-white border-y border-black/20">
         <div class="whitespace-nowrap marquee inline-block text-[80px] sm:text-[120px] md:text-[180px] font-light leading-none opacity-90">
           ATHLETE WEAR &nbsp;&nbsp;&nbsp; ATHLETE WEAR &nbsp;&nbsp;&nbsp;
         </div>
       </div>
-      <h1 className="text-center pt-10 text-3xl ">
+      <h1 className="text-center pt-10 text-3xl">
         {" "}
-        We offer high quality football tshirts
+        WE OFFER HIGH QUALITY JERSEYS
       </h1>
       <GalleryHome></GalleryHome>
       <Link
@@ -44,7 +46,7 @@ function Home() {
       </Link>
       <h1 className="bg-black text-center pt-5 text-3xl text-white py-4">
         {" "}
-        And many more, check out the products page here
+        AND MANY MORE ITEMS
       </h1>
 
       <Footer></Footer>

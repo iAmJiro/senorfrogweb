@@ -41,7 +41,7 @@ const Footer = () => {
 
       {/* Footer Copyright */}
       <p className="text-center text-gray-700 font-medium">
-        &copy; 2022 Company Ltd. All rights reserved.
+        &copy; 2024 Company Ltd. All rights reserved.
       </p>
     </footer>
   );

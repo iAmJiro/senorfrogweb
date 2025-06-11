@@ -17,7 +17,7 @@ const products = [
   {
     id: 2,
     name: "1998 Argentina Away Jersey",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt2-${i + 1}.png`
@@ -27,7 +27,7 @@ const products = [
   {
     id: 3,
     name: "2004 Brazil Home Jersey",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt3-${i + 1}.png`
@@ -38,7 +38,7 @@ const products = [
   {
     id: 4,
     name: "1994 Germany Home Jersey",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt4-${i + 1}.png`
@@ -48,7 +48,7 @@ const products = [
   {
     id: 5,
     name: "2006 France Away Jersey",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt5-${i + 1}.png`
@@ -59,7 +59,7 @@ const products = [
   {
     id: 6,
     name: "2006/07 Manchester United Home Jersey",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt6-${i + 1}.png`
@@ -70,7 +70,7 @@ const products = [
   {
     id: 7,
     name: "2000/01 FC Barcelona x Travis Scott Retro Jersey",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt7-${i + 1}.png`
@@ -81,7 +81,7 @@ const products = [
   {
     id: 8,
     name: "2006/07 AC Milan Away Jersey – UCL Final",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt8-${i + 1}.png`
@@ -91,7 +91,7 @@ const products = [
   {
     id: 9,
     name: "1999/2000 Real Madrid Home Jersey",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt9-${i + 1}.png`
@@ -100,8 +100,8 @@ const products = [
   },
   {
     id: 10,
-    name: "1998/99 Inter Milan Third Jersey – Champions League Edition",
-    price: "$65.99",
+    name: "1998/99 Inter Milan Third Jersey",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt10-${i + 1}.png`
@@ -112,7 +112,7 @@ const products = [
   {
     id: 11,
     name: "2006/07 Manchester United Home Jersey – UCL Edition",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt11-${i + 1}.jpg`
@@ -121,18 +121,19 @@ const products = [
   },
   {
     id: 12,
-    name: "Product Name",
-    price: "$65.99",
+    name: "1998 England Home Jersey",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt12-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description:
+      "Worn at the 1998 World Cup by icons like Beckham, Shearer, and Owen",
   },
   {
     id: 13,
     name: "FC Barcelona 16/17 Away",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt13-${i + 1}.jpg`
@@ -143,18 +144,18 @@ const products = [
   {
     id: 14,
     name: "Santos FC 11/12 Home",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt14-${i + 1}.jpg`
     ),
     description:
-      "Worn during a memorable season when Santos competed in domestic and international tournaments A deep red home shirt celebrating Liverpool’s 125th anniversary",
+      "A deep red home shirt celebrating Liverpool’s 125th anniversary",
   },
   {
     id: 15,
     name: "Liverpool FC 17/18 Home",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt15-${i + 1}.jpg`
@@ -165,7 +166,7 @@ const products = [
   {
     id: 16,
     name: "Paris Saint-Germain 99/00 Home",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt16-${i + 1}.jpg`
@@ -175,7 +176,7 @@ const products = [
   {
     id: 17,
     name: "Liverpool FC 10/11 Home",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt17-${i + 1}.jpg`
@@ -184,18 +185,19 @@ const products = [
   },
   {
     id: 18,
-    name: "Product Name",
-    price: "$65.99",
+    name: "FC Barcelona 10/11",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt18-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description:
+      "Was worn by an iconic squad including Messi, Xavi, and Iniesta",
   },
   {
     id: 19,
     name: "Real Madrid 15/16 Away",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt19-${i + 1}.jpg`
@@ -205,7 +207,7 @@ const products = [
   {
     id: 20,
     name: "Real Madrid 16/17 Away",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt20-${i + 1}.jpg`
@@ -216,7 +218,7 @@ const products = [
   {
     id: 21,
     name: "Argentina 2006 Away",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt21-${i + 1}.jpg`
@@ -227,7 +229,7 @@ const products = [
   {
     id: 22,
     name: "Croatia 2006 Home",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt22-${i + 1}.jpg`
@@ -237,7 +239,7 @@ const products = [
   {
     id: 23,
     name: "FC Barcelona 10/11 Home",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt23-${i + 1}.jpg`
@@ -248,7 +250,7 @@ const products = [
   {
     id: 24,
     name: "Arsenal 03/04 Home",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt24-${i + 1}.jpg`
@@ -258,7 +260,7 @@ const products = [
   {
     id: 25,
     name: "Mexico 2010 Home",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt25-${i + 1}.jpg`
@@ -268,7 +270,7 @@ const products = [
   {
     id: 26,
     name: "Paris Saint-Germain 17/18 Home",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt26-${i + 1}.jpg`
@@ -278,7 +280,7 @@ const products = [
   {
     id: 27,
     name: "Chelsea 14/15 Home",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt27-${i + 1}.jpg`
@@ -288,7 +290,7 @@ const products = [
   {
     id: 28,
     name: "Argentina 11/12 Away",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt28-${i + 1}.jpg`
@@ -298,7 +300,7 @@ const products = [
   {
     id: 29,
     name: "Argentina 22/23 Away",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt29-${i + 1}.jpg`
@@ -308,7 +310,7 @@ const products = [
   {
     id: 30,
     name: "FC Barcelona 99/00",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt30-${i + 1}.jpg`
@@ -319,7 +321,7 @@ const products = [
   {
     id: 31,
     name: "Atlético Madrid 04/05",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt31-${i + 1}.jpg`
@@ -329,7 +331,7 @@ const products = [
   {
     id: 32,
     name: "Portugal 22/23 Away",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt32-${i + 1}.jpg`
@@ -340,7 +342,7 @@ const products = [
   {
     id: 33,
     name: "Manchester City 99/00",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt33-${i + 1}.jpg`
@@ -350,7 +352,7 @@ const products = [
   {
     id: 34,
     name: "Juventus 15/16 Away",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt34-${i + 1}.jpg`
@@ -361,7 +363,7 @@ const products = [
   {
     id: 35,
     name: "AC Milan 06/07 Away",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt35-${i + 1}.jpg`
@@ -371,7 +373,7 @@ const products = [
   {
     id: 36,
     name: "Manchester United 08/09",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt36-${i + 1}.jpg`
@@ -382,7 +384,7 @@ const products = [
   {
     id: 37,
     name: "Germany 14/15 Home",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt37-${i + 1}.jpg`
@@ -393,7 +395,7 @@ const products = [
   {
     id: 38,
     name: "Nigeria 98/00 Home",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt38-${i + 1}.jpg`
@@ -403,7 +405,7 @@ const products = [
   {
     id: 39,
     name: "Arsenal 94/95 Away",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt39-${i + 1}.jpg`
@@ -414,7 +416,7 @@ const products = [
   {
     id: 40,
     name: "France 98 Home",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt40-${i + 1}.jpg`
@@ -454,8 +456,7 @@ const ProductShowcase = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [formData, setFormData] = useState({
     size: "",
-    topName: "",
-    bottomName: "",
+    name: "",
     number: "",
     email: "",
   });
@@ -543,7 +544,7 @@ const ProductShowcase = () => {
                   onClick={() => handleAddToCart(product)}
                   className="bg-gray-900 text-white py-1 px-2 sm:py-2 sm:px-4 rounded-full font-bold hover:bg-gray-800 text-sm md:text-xl w-full sm:w-auto"
                 >
-                  Add to Cart
+                  Buy
                 </button>
               </div>
             </div>
@@ -553,36 +554,37 @@ const ProductShowcase = () => {
 
       {/* Product Details Modal */}
       {selectedProduct && modalImages && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 md:pt-10">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4 md:p-10">
           {showEmailStep ? (
-            <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-              <h2 className="text-2xl font-bold mb-4">Confirm Your Details</h2>
+            <div className="bg-white p-6 md:mt-16 md:p-8 rounded-lg shadow-lg w-full max-w-sm md:max-w-md lg:max-w-lg">
+              <h2 className="text-xl md:text-2xl font-bold mb-4 text-center">
+                Confirm Your Details
+              </h2>
 
               <img
                 src={modalImages[0]}
                 alt={selectedProduct.name}
-                className="w-full h-64 object-cover rounded-md mb-4"
+                className="w-full h-48 md:h-64 object-contain rounded-md mb-4"
               />
 
-              <div className="flex justify-between space-x-4 mb-2">
-                <p className="w-1/2">Size: {formData.size}</p>
-                <p className="w-1/2">
+              <div className="flex flex-col md:flex-row justify-between space-y-2 md:space-y-0 md:space-x-4">
+                <p className="text-sm md:text-base w-full md:w-1/2">
+                  Size: {formData.size}
+                </p>
+                <p className="text-sm md:text-base w-full md:w-1/2">
                   Number: {formData.number?.toString().trim() || "N/A"}
                 </p>
               </div>
 
-              <div className="flex justify-between space-x-4 mb-4">
-                <p className="w-1/2">
-                  Top Name: {formData.topName?.trim() || "N/A"}
-                </p>
-                <p className="w-1/2">
-                  Bottom Name: {formData.bottomName?.trim() || "N/A"}
+              <div className="flex flex-col md:flex-row justify-between space-y-2 md:space-y-0 md:space-x-4 mb-4">
+                <p className="text-sm md:text-base w-full md:w-1/2">
+                  Name: {formData.topName?.trim() || "N/A"}
                 </p>
               </div>
 
-              <h1 className="pb-2">
+              <h1 className="pb-2 text-sm md:text-base text-center">
                 We will get in contact with you to confirm your order! Please
-                include your email address below
+                include your email address below.
               </h1>
               <input
                 type="email"
@@ -591,19 +593,19 @@ const ProductShowcase = () => {
                 onChange={(e) =>
                   setFormData((prev) => ({ ...prev, email: e.target.value }))
                 }
-                className="p-2 border rounded-md w-full"
+                className="p-2 border rounded-md w-full text-sm md:text-base"
               />
 
-              <div className="flex justify-between mt-6">
+              <div className="flex flex-col md:flex-row justify-between mt-6 space-y-2 md:space-y-0">
                 <button
-                  className="bg-gray-300 text-gray-800 px-4 py-2 rounded-full hover:bg-gray-400"
+                  className="bg-gray-300 text-gray-800 px-4 py-2 rounded-full hover:bg-gray-400 text-sm md:text-base"
                   onClick={() => setShowEmailStep(false)}
                 >
                   Back
                 </button>
                 <button
-                  className="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-500"
-                  onClick={handleNextStep}
+                  className="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-500 text-sm md:text-base"
+                  onClick={() => console.log("Submit order")}
                 >
                   Submit
                 </button>
@@ -611,40 +613,35 @@ const ProductShowcase = () => {
             </div>
           ) : (
             <div
-              className={`bg-white p-8 rounded-lg shadow-lg ${
-                isExpanded ? "max-w-5xl" : "max-w-4xl"
-              } w-full flex`}
+              className={`bg-white p-6 mt-16 md:mt-0 md:p-8 rounded-lg shadow-lg ${
+                isExpanded ? "max-w-4xl" : "max-w-3xl"
+              } w-full flex flex-col md:flex-row`}
             >
               {/* Left Column */}
-              <div className="flex flex-col items-start">
+              <div className="flex flex-col items-center md:items-start">
                 <img
                   src={modalImages[0]}
                   alt={selectedProduct.name}
-                  className="w-64 h-64 rounded-md"
+                  className="w-48 h-48 md:w-64 md:h-64 rounded-md object-contain"
                 />
                 <div className="flex space-x-2 mt-4">
                   {modalImages.slice(1).map((image, index) => (
                     <img
-                      key={index + 1}
+                      key={index}
                       src={image}
                       alt={selectedProduct.name}
-                      className="w-20 h-20 rounded-md cursor-pointer hover:opacity-75"
-                      onClick={() => swapImages(index + 1)}
+                      className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer hover:opacity-75"
                     />
                   ))}
                 </div>
               </div>
 
               {/* Right Column */}
-              <div className="ml-6 flex flex-col">
-                <h2 className="text-2xl font-bold text-left">
+              <div className="mt-4 md:ml-6 flex flex-col items-center md:items-start">
+                <h2 className="text-xl md:text-2xl font-bold">
                   {selectedProduct.name}
                 </h2>
-                <p
-                  className={`text-gray-500 text-left ${
-                    isExpanded ? "w-2/3" : "w-4/5"
-                  }`}
-                >
+                <p className="text-sm md:text-base text-gray-500 text-center md:text-left">
                   {selectedProduct.description}
                 </p>
 
@@ -652,7 +649,7 @@ const ProductShowcase = () => {
                   Choose Size:
                 </label>
                 <select
-                  className="mt-2 p-2 border rounded-md"
+                  className="mt-2 p-2 border rounded-md w-full text-sm md:text-base"
                   value={formData.size}
                   onChange={(e) =>
                     setFormData((prev) => ({ ...prev, size: e.target.value }))
@@ -663,9 +660,11 @@ const ProductShowcase = () => {
                   <option value="M">Medium</option>
                   <option value="L">Large</option>
                   <option value="XL">Extra Large</option>
+                  <option value="XXL">Double Extra Large</option>
+                  <option value="XXXL">Triple Extra Large</option>
                 </select>
 
-                <div className="mt-4 flex items-center space-x-4">
+                <div className="mt-4 flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
                   <label className="flex items-center cursor-pointer">
                     <input
                       type="checkbox"
@@ -679,64 +678,54 @@ const ProductShowcase = () => {
                   </label>
 
                   {isExpanded && (
-                    <>
-                      <input
-                        type="text"
-                        placeholder="Enter Top Name"
-                        className="p-2 border rounded-md w-40"
-                        value={formData.topName}
-                        onChange={(e) =>
-                          setFormData((prev) => ({
-                            ...prev,
-                            topName: e.target.value,
-                          }))
-                        }
-                      />
-                      <input
-                        type="text"
-                        placeholder="Enter Bottom Name"
-                        className="p-2 border rounded-md w-40"
-                        value={formData.bottomName}
-                        onChange={(e) =>
-                          setFormData((prev) => ({
-                            ...prev,
-                            bottomName: e.target.value,
-                          }))
-                        }
-                      />
-                      <input
-                        type="number"
-                        placeholder="Num."
-                        className="p-2 border rounded-md w-20"
-                        value={formData.number}
-                        onChange={(e) =>
-                          setFormData((prev) => ({
-                            ...prev,
-                            number: e.target.value,
-                          }))
-                        }
-                      />
-                    </>
+                    <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 w-full">
+                      <div className="flex flex-row space-x-4 w-full">
+                        <input
+                          type="text"
+                          placeholder="Enter Name"
+                          className="p-2 border rounded-md w-1/2 text-sm md:text-base"
+                          value={formData.topName}
+                          onChange={(e) =>
+                            setFormData((prev) => ({
+                              ...prev,
+                              topName: e.target.value,
+                            }))
+                          }
+                        />
+                        <input
+                          type="number"
+                          placeholder="Num."
+                          className="p-2 border rounded-md w-1/2 text-sm md:text-base"
+                          value={formData.number}
+                          onChange={(e) =>
+                            setFormData((prev) => ({
+                              ...prev,
+                              number: e.target.value,
+                            }))
+                          }
+                        />
+                      </div>
+                    </div>
                   )}
                 </div>
 
-                <p className="text-gray-900 font-bold text-xl mt-4 text-left">
-                  {selectedProduct.price} {isExpanded && "+ $5.00"}
-                </p>
+                <div className="relative w-full">
+                  {/* Other modal content goes here */}
 
-                <div className="flex justify-end space-x-4 mt-auto">
-                  <button
-                    onClick={() => setSelectedProduct(null)}
-                    className="bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-gray-700"
-                  >
-                    Close
-                  </button>
-                  <button
-                    onClick={() => setShowEmailStep(true)}
-                    className="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-500"
-                  >
-                    Next
-                  </button>
+                  <div className="flex justify-center md:justify-end mt-6 md:absolute bottom-4 right-4 w-full md:w-auto space-x-4">
+                    <button
+                      onClick={() => setSelectedProduct(null)}
+                      className="bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-gray-700 text-sm md:text-base"
+                    >
+                      Close
+                    </button>
+                    <button
+                      onClick={() => setShowEmailStep(true)}
+                      className="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-500 text-sm md:text-base"
+                    >
+                      Next
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
