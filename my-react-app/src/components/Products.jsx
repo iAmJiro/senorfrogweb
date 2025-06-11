@@ -556,7 +556,7 @@ const ProductShowcase = () => {
 
       {/* Product Details Modal */}
       {selectedProduct && modalImages && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black m-4 md:m-0 bg-opacity-50 p-4 md:p-10 h-full">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4 md:p-10 h-screen md:h-auto">
           {showEmailStep ? (
             <div className="bg-white p-6 md:mt-16 md:p-8 rounded-lg shadow-lg w-full max-w-sm md:max-w-md lg:max-w-lg">
               <h2 className="text-xl md:text-2xl font-bold mb-4 text-center">
