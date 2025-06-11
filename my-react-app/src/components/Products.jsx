@@ -498,14 +498,6 @@ const ProductShowcase = () => {
     document.body.style.overflow = showEmailStep ? "hidden" : "auto";
   }, [showEmailStep]);
 
-  useEffect(() => {
-    if (showEmailStep) {
-      document.body.classList.add("disable-scroll");
-    } else {
-      document.body.classList.remove("disable-scroll");
-    }
-  }, [showEmailStep]);
-
   return (
     <div className="bg-gray-900 py-26 md:pt-38 md:pb-4 min-h-screen">
       <div className="container mx-auto px-4">
@@ -564,7 +556,7 @@ const ProductShowcase = () => {
 
       {/* Product Details Modal */}
       {selectedProduct && modalImages && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4 md:p-10 overflow-hidden h-screen">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4 md:p-10">
           {showEmailStep ? (
             <div className="bg-white p-6 md:mt-16 md:p-8 rounded-lg shadow-lg w-full max-w-sm md:max-w-md lg:max-w-lg">
               <h2 className="text-xl md:text-2xl font-bold mb-4 text-center">
@@ -626,8 +618,8 @@ const ProductShowcase = () => {
             </div>
           ) : (
             <div
-              className={`bg-white p-6 mt-16 md:mt-0 md:p-8 rounded-lg shadow-lg ${
-                isExpanded ? "max-w-4xl" : "max-w-3xl"
+              className={`bg-white p-6 mt-16 md:mt-0 md:p-8 rounded-lg shadow-lg h-full ${
+                isExpanded ? "max-w-5xl" : "max-w-4xl"
               } w-full flex flex-col md:flex-row`}
             >
               {/* Left Column */}
@@ -686,7 +678,7 @@ const ProductShowcase = () => {
                       className="mr-2"
                     />
                     <span className="text-gray-900 font-bold">
-                      Add Custom Name & Number
+                      Add Custom Name & Number (+$5.00)
                     </span>
                   </label>
 
@@ -720,6 +712,13 @@ const ProductShowcase = () => {
                       </div>
                     </div>
                   )}
+                </div>
+
+                {/* Price Display */}
+                <div className="mt-4 text-center md:text-left">
+                  <p className="text-lg md:text-xl font-bold text-gray-900">
+                    {selectedProduct.price}
+                  </p>
                 </div>
 
                 <div className="overflow-hidden relative w-full min-h-[65px] md:min-h-[150px]">
