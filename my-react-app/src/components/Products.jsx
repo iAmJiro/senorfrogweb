@@ -709,10 +709,10 @@ const ProductShowcase = () => {
                   )}
                 </div>
 
-                <div className="relative w-full">
-                  {/* Other modal content goes here */}
+                <div className="relative w-full min-h-[150px]">
+                  {/* Other modal content */}
 
-                  <div className="flex justify-center md:justify-end mt-6 md:absolute bottom-4 right-4 w-full md:w-auto space-x-4">
+                  <div className="absolute bottom-0 w-full flex justify-center md:justify-end md:right-4 space-x-4 p-4">
                     <button
                       onClick={() => setSelectedProduct(null)}
                       className="bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-gray-700 text-sm md:text-base"
