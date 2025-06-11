@@ -131,53 +131,56 @@ const products = [
   },
   {
     id: 13,
-    name: "Product Name",
+    name: "FC Barcelona 16/17 Away",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt13-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description:
+      "Worn during a competitive season with Qatar Airways as the main sponsor",
   },
   {
     id: 14,
-    name: "Product Name",
+    name: "Santos FC 11/12 Home",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt14-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description:
+      "Worn during a memorable season when Santos competed in domestic and international tournaments A deep red home shirt celebrating Liverpool’s 125th anniversary",
   },
   {
     id: 15,
-    name: "Product Name",
+    name: "Liverpool FC 17/18 Home",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt15-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description:
+      "A deep red home shirt celebrating Liverpool’s 125th anniversary",
   },
   {
     id: 16,
-    name: "Product Name",
+    name: "Paris Saint-Germain 99/00 Home",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt16-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description: "This kit was worn during a transitional season for PSG",
   },
   {
     id: 17,
-    name: "Product Name",
+    name: "Liverpool FC 10/11 Home",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt17-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description: "This kit marked the arrival of Kenny Dalglish as manager",
   },
   {
     id: 18,
@@ -191,223 +194,233 @@ const products = [
   },
   {
     id: 19,
-    name: "Product Name",
+    name: "Real Madrid 15/16 Away",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt19-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description: "This kit saw Madrid claim the UEFA Champions League title",
   },
   {
     id: 20,
-    name: "Product Name",
+    name: "Real Madrid 16/17 Away",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt20-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description:
+      "This kit became iconic as Madrid secured their 12th Champions League title",
   },
   {
     id: 21,
-    name: "Product Name",
+    name: "Argentina 2006 Away",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt21-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description:
+      "This kit was donned by legends like Juan Román Riquelme and Lionel Messi",
   },
   {
     id: 22,
-    name: "Product Name",
+    name: "Croatia 2006 Home",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt22-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description: "This kit was worn during the 2006 FIFA World Cup",
   },
   {
     id: 23,
-    name: "Product Name",
+    name: "FC Barcelona 10/11 Home",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt23-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description:
+      "Commemorating Barcelona’s 2011 Champions League triumph over Manchester United",
   },
   {
     id: 24,
-    name: "Product Name",
+    name: "Arsenal 03/04 Home",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt24-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description: "This iconic kit was worn during Arsenal’s Invincibles season",
   },
   {
     id: 25,
-    name: "Product Name",
+    name: "Mexico 2010 Home",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt25-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description: "Worn during the 2010 FIFA World Cup",
   },
   {
     id: 26,
-    name: "Product Name",
+    name: "Paris Saint-Germain 17/18 Home",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt26-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description: "This kit saw the arrival of Neymar and Mbappé",
   },
   {
     id: 27,
-    name: "Product Name",
+    name: "Chelsea 14/15 Home",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt27-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description: "This kit saw Chelsea dominate the Premier League",
   },
   {
     id: 28,
-    name: "Product Name",
+    name: "Argentina 11/12 Away",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt28-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description: "This kit was sported by stars like Messi, Agüero, and Tevez",
   },
   {
     id: 29,
-    name: "Product Name",
+    name: "Argentina 22/23 Away",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt29-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description: "Worn during the 2022 FIFA World Cup",
   },
   {
     id: 30,
-    name: "Product Name",
+    name: "FC Barcelona 99/00",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt30-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description:
+      "This kit was created to celebrate Barcelona’s 100th anniversary (1899-1999)",
   },
   {
     id: 31,
-    name: "Product Name",
+    name: "Atlético Madrid 04/05",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt31-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description: "Worn during select matches in the 2004/05 season",
   },
   {
     id: 32,
-    name: "Product Name",
+    name: "Portugal 22/23 Away",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt32-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description:
+      "This kit was worn during Portugal’s 2022 FIFA World Cup campaign",
   },
   {
     id: 33,
-    name: "Product Name",
+    name: "Manchester City 99/00",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt33-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description: "Worn during Manchester City's promotion-winning campaign",
   },
   {
     id: 34,
-    name: "Product Name",
+    name: "Juventus 15/16 Away",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt34-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description:
+      "A striking pink away shirt, featuring black Adidas stripes and Jeep as the main sponsor.",
   },
   {
     id: 35,
-    name: "Product Name",
+    name: "AC Milan 06/07 Away",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt35-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description: "This kit was donned by legends like Kaká and Paolo Maldini",
   },
   {
     id: 36,
-    name: "Product Name",
+    name: "Manchester United 08/09",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt36-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description:
+      "Worn during a season where United won the Premier League and reached the Champions League final",
   },
   {
     id: 37,
-    name: "Product Name",
+    name: "Germany 14/15 Home",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt37-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description:
+      "This kit became legendary as Germany defeated Argentina in the final",
   },
   {
     id: 38,
-    name: "Product Name",
+    name: "Nigeria 98/00 Home",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt38-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description: "This kit was worn during Nigeria’s 1998 World Cup campaign",
   },
   {
     id: 39,
-    name: "Product Name",
+    name: "Arsenal 94/95 Away",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt39-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description:
+      "This kit became one of Arsenal’s most unique and recognizable designs",
   },
   {
     id: 40,
-    name: "Product Name",
+    name: "France 98 Home",
     price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt40-${i + 1}.jpg`
     ),
-    description: "I love football",
+    description:
+      "This iconic kit was worn during France's historic World Cup triumph",
   },
 ];
 
@@ -471,7 +484,7 @@ const ProductShowcase = () => {
             response.status,
             response.text
           );
-          alert("Order sent!");
+          alert("Order sent! We will contact you soon!");
           setSelectedProduct(null); // optional: close modal
           setShowEmailStep(false); // optional: reset to first screen
         },
@@ -693,7 +706,7 @@ const ProductShowcase = () => {
                       />
                       <input
                         type="number"
-                        placeholder="Number"
+                        placeholder="Num."
                         className="p-2 border rounded-md w-20"
                         value={formData.number}
                         onChange={(e) =>
