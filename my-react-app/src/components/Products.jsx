@@ -7,7 +7,7 @@ const products = [
   {
     id: 1,
     name: "2006/07 AC Milan Home Jersey",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt1-${i + 1}.png`
@@ -18,7 +18,7 @@ const products = [
   {
     id: 2,
     name: "1998 Argentina Away Jersey",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt2-${i + 1}.png`
@@ -28,7 +28,7 @@ const products = [
   {
     id: 3,
     name: "2004 Brazil Home Jersey",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt3-${i + 1}.png`
@@ -39,7 +39,7 @@ const products = [
   {
     id: 4,
     name: "1994 Germany Home Jersey",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt4-${i + 1}.png`
@@ -49,7 +49,7 @@ const products = [
   {
     id: 5,
     name: "2006 France Away Jersey",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt5-${i + 1}.png`
@@ -60,7 +60,7 @@ const products = [
   {
     id: 6,
     name: "2006/07 Manchester United Home Jersey",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt6-${i + 1}.png`
@@ -71,7 +71,7 @@ const products = [
   {
     id: 7,
     name: "2000/01 FC Barcelona x Travis Scott Retro Jersey",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt7-${i + 1}.png`
@@ -82,7 +82,7 @@ const products = [
   {
     id: 8,
     name: "2006/07 AC Milan Away Jersey – UCL Final",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt8-${i + 1}.png`
@@ -92,7 +92,7 @@ const products = [
   {
     id: 9,
     name: "1999/2000 Real Madrid Home Jersey",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt9-${i + 1}.png`
@@ -102,7 +102,7 @@ const products = [
   {
     id: 10,
     name: "1998/99 Inter Milan Third Jersey – Champions League Edition",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt10-${i + 1}.png`
@@ -113,7 +113,7 @@ const products = [
   {
     id: 11,
     name: "2006/07 Manchester United Home Jersey – UCL Edition",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt11-${i + 1}.jpg`
@@ -123,7 +123,7 @@ const products = [
   {
     id: 12,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt12-${i + 1}.jpg`
@@ -133,7 +133,7 @@ const products = [
   {
     id: 13,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt13-${i + 1}.jpg`
@@ -143,7 +143,7 @@ const products = [
   {
     id: 14,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt14-${i + 1}.jpg`
@@ -153,7 +153,7 @@ const products = [
   {
     id: 15,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt15-${i + 1}.jpg`
@@ -163,7 +163,7 @@ const products = [
   {
     id: 16,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt16-${i + 1}.jpg`
@@ -173,7 +173,7 @@ const products = [
   {
     id: 17,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt17-${i + 1}.jpg`
@@ -183,7 +183,7 @@ const products = [
   {
     id: 18,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt18-${i + 1}.jpg`
@@ -193,7 +193,7 @@ const products = [
   {
     id: 19,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt19-${i + 1}.jpg`
@@ -203,7 +203,7 @@ const products = [
   {
     id: 20,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt20-${i + 1}.jpg`
@@ -213,7 +213,7 @@ const products = [
   {
     id: 21,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt21-${i + 1}.jpg`
@@ -223,7 +223,7 @@ const products = [
   {
     id: 22,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt22-${i + 1}.jpg`
@@ -233,7 +233,7 @@ const products = [
   {
     id: 23,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt23-${i + 1}.jpg`
@@ -243,7 +243,7 @@ const products = [
   {
     id: 24,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt24-${i + 1}.jpg`
@@ -253,7 +253,7 @@ const products = [
   {
     id: 25,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt25-${i + 1}.jpg`
@@ -263,7 +263,7 @@ const products = [
   {
     id: 26,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt26-${i + 1}.jpg`
@@ -273,7 +273,7 @@ const products = [
   {
     id: 27,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt27-${i + 1}.jpg`
@@ -283,7 +283,7 @@ const products = [
   {
     id: 28,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt28-${i + 1}.jpg`
@@ -293,7 +293,7 @@ const products = [
   {
     id: 29,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt29-${i + 1}.jpg`
@@ -303,7 +303,7 @@ const products = [
   {
     id: 30,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt30-${i + 1}.jpg`
@@ -313,7 +313,7 @@ const products = [
   {
     id: 31,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt31-${i + 1}.jpg`
@@ -323,7 +323,7 @@ const products = [
   {
     id: 32,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt32-${i + 1}.jpg`
@@ -333,7 +333,7 @@ const products = [
   {
     id: 33,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt33-${i + 1}.jpg`
@@ -343,7 +343,7 @@ const products = [
   {
     id: 34,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt34-${i + 1}.jpg`
@@ -353,7 +353,7 @@ const products = [
   {
     id: 35,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt35-${i + 1}.jpg`
@@ -363,7 +363,7 @@ const products = [
   {
     id: 36,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt36-${i + 1}.jpg`
@@ -373,7 +373,7 @@ const products = [
   {
     id: 37,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt37-${i + 1}.jpg`
@@ -383,7 +383,7 @@ const products = [
   {
     id: 38,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt38-${i + 1}.jpg`
@@ -393,7 +393,7 @@ const products = [
   {
     id: 39,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt39-${i + 1}.jpg`
@@ -403,7 +403,7 @@ const products = [
   {
     id: 40,
     name: "Product Name",
-    price: "$59.99",
+    price: "$65.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt40-${i + 1}.jpg`
