@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Footer from "./Footer";
-import shirt3_1 from "/images/shirtimages/shirt3-1.png";
-import shirt4_1 from "/images/shirtimages/shirt4-1.png";
+import emailjs from "@emailjs/browser";
 
 const products = [
   {
@@ -440,6 +439,49 @@ const ProductShowcase = () => {
 
   const [customize, setCustomize] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
+  const [formData, setFormData] = useState({
+    size: "",
+    topName: "",
+    bottomName: "",
+    number: "",
+    email: "",
+  });
+
+  const [showEmailStep, setShowEmailStep] = useState(false);
+  const handleNextStep = () => {
+    const templateParams = {
+      size: formData.size,
+      top_name: formData.topName || "N/A",
+      bottom_name: formData.bottomName || "N/A",
+      number: formData.number || "N/A",
+      email: formData.email,
+    };
+
+    emailjs
+      .send(
+        "service_6i599gq",
+        "template_goxcei7",
+        templateParams,
+        "go5Pq4Cfcv3H503_h"
+      )
+      .then(
+        (response) => {
+          console.log(
+            "Email sent successfully!",
+            response.status,
+            response.text
+          );
+          alert("Order sent!");
+          setSelectedProduct(null); // optional: close modal
+          setShowEmailStep(false); // optional: reset to first screen
+        },
+        (err) => {
+          console.error("Email failed...", err);
+          alert("Failed to send email. Please try again.");
+        }
+      );
+  };
+
   return (
     <div className="bg-gray-900 py-26 md:pt-38 md:pb-4 min-h-screen">
       <div className="container mx-auto px-4">
@@ -499,118 +541,196 @@ const ProductShowcase = () => {
       {/* Product Details Modal */}
       {selectedProduct && modalImages && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 md:pt-10">
-          <div
-            className={`bg-white p-8 rounded-lg shadow-lg ${
-              isExpanded ? "max-w-5xl" : "max-w-4xl"
-            } w-full flex`}
-          >
-            <div className="flex flex-col items-start">
-              {/* Main Image */}
+          {showEmailStep ? (
+            <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+              <h2 className="text-2xl font-bold mb-4">Confirm Your Details</h2>
+
               <img
                 src={modalImages[0]}
                 alt={selectedProduct.name}
-                className="w-64 h-64 rounded-md"
+                className="w-full h-64 object-cover rounded-md mb-4"
               />
-              {/* Thumbnail Images */}
-              <div className="flex space-x-2 mt-4">
-                {modalImages.slice(1).map((image, index) => (
-                  <img
-                    key={index + 1}
-                    src={image}
-                    alt={selectedProduct.name}
-                    className="w-20 h-20 rounded-md cursor-pointer hover:opacity-75"
-                    onClick={() => swapImages(index + 1)}
-                  />
-                ))}
+
+              <div className="flex justify-between space-x-4 mb-2">
+                <p className="w-1/2">Size: {formData.size}</p>
+                <p className="w-1/2">
+                  Number: {formData.number?.toString().trim() || "N/A"}
+                </p>
+              </div>
+
+              <div className="flex justify-between space-x-4 mb-4">
+                <p className="w-1/2">
+                  Top Name: {formData.topName?.trim() || "N/A"}
+                </p>
+                <p className="w-1/2">
+                  Bottom Name: {formData.bottomName?.trim() || "N/A"}
+                </p>
+              </div>
+
+              <h1 className="pb-2">
+                We will get in contact with you to confirm your order! Please
+                include your email address below
+              </h1>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                value={formData.email}
+                onChange={(e) =>
+                  setFormData((prev) => ({ ...prev, email: e.target.value }))
+                }
+                className="p-2 border rounded-md w-full"
+              />
+
+              <div className="flex justify-between mt-6">
+                <button
+                  className="bg-gray-300 text-gray-800 px-4 py-2 rounded-full hover:bg-gray-400"
+                  onClick={() => setShowEmailStep(false)}
+                >
+                  Back
+                </button>
+                <button
+                  className="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-500"
+                  onClick={handleNextStep}
+                >
+                  Submit
+                </button>
               </div>
             </div>
+          ) : (
+            <div
+              className={`bg-white p-8 rounded-lg shadow-lg ${
+                isExpanded ? "max-w-5xl" : "max-w-4xl"
+              } w-full flex`}
+            >
+              {/* Left Column */}
+              <div className="flex flex-col items-start">
+                <img
+                  src={modalImages[0]}
+                  alt={selectedProduct.name}
+                  className="w-64 h-64 rounded-md"
+                />
+                <div className="flex space-x-2 mt-4">
+                  {modalImages.slice(1).map((image, index) => (
+                    <img
+                      key={index + 1}
+                      src={image}
+                      alt={selectedProduct.name}
+                      className="w-20 h-20 rounded-md cursor-pointer hover:opacity-75"
+                      onClick={() => swapImages(index + 1)}
+                    />
+                  ))}
+                </div>
+              </div>
 
-            {/* Right Panel - Size & Customization */}
-            <div className="ml-6 flex flex-col">
-              <h2 className="text-2xl font-bold text-left">
-                {selectedProduct.name}
-              </h2>
-              <p
-                className={`text-gray-500 text-left ${
-                  isExpanded ? "w-2/3" : "w-4/5"
-                }`}
-              >
-                {selectedProduct.description}
-              </p>
+              {/* Right Column */}
+              <div className="ml-6 flex flex-col">
+                <h2 className="text-2xl font-bold text-left">
+                  {selectedProduct.name}
+                </h2>
+                <p
+                  className={`text-gray-500 text-left ${
+                    isExpanded ? "w-2/3" : "w-4/5"
+                  }`}
+                >
+                  {selectedProduct.description}
+                </p>
 
-              {/* Shirt Size Selection */}
-              <label className="mt-4 text-gray-900 font-bold">
-                Choose Size:
-              </label>
-              <select className="mt-2 p-2 border rounded-md">
-                <option value="S">Small</option>
-                <option value="M">Medium</option>
-                <option value="L">Large</option>
-                <option value="XL">Extra Large</option>
-              </select>
-
-              {/* Checkbox & Inputs Aligned Horizontally */}
-              <div className="mt-4 flex items-center space-x-4">
-                {/* Checkbox for Customization */}
-                <label className="flex items-center cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={isExpanded}
-                    onChange={() => setIsExpanded(!isExpanded)}
-                    className="mr-2"
-                  />
-                  <span className="text-gray-900 font-bold">
-                    Add Custom Name & Number
-                  </span>
+                <label className="mt-4 text-gray-900 font-bold">
+                  Choose Size:
                 </label>
-
-                {/* Inputs Appear to the Right When Checkbox is Checked */}
-                {isExpanded && (
-                  <>
-                    <input
-                      type="text"
-                      placeholder="Enter Top Name"
-                      className="p-2 border rounded-md w-40"
-                    />
-                    <input
-                      type="text"
-                      placeholder="Enter Bottom Name"
-                      className="p-2 border rounded-md w-40"
-                    />
-                    <input
-                      type="number"
-                      placeholder="Number"
-                      className="p-2 border rounded-md w-20"
-                    />
-                  </>
-                )}
-              </div>
-
-              <p className="text-gray-900 font-bold text-xl mt-4 text-left">
-                {selectedProduct.price} {isExpanded && "+ $5.00"}
-              </p>
-
-              {/* Buttons Section */}
-              {/* Buttons Section - Positioned at the Bottom Right */}
-              {/* Buttons Section - Anchored to the Bottom of the White Box */}
-              <div className="flex justify-end space-x-4 mt-auto">
-                <button
-                  onClick={() => setSelectedProduct(null)}
-                  className="bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-gray-700"
+                <select
+                  className="mt-2 p-2 border rounded-md"
+                  value={formData.size}
+                  onChange={(e) =>
+                    setFormData((prev) => ({ ...prev, size: e.target.value }))
+                  }
                 >
-                  Close
-                </button>
-                <button
-                  onClick={() => handleNextStep()}
-                  className="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-500"
-                >
-                  Next
-                </button>
+                  <option value="">Select</option>
+                  <option value="S">Small</option>
+                  <option value="M">Medium</option>
+                  <option value="L">Large</option>
+                  <option value="XL">Extra Large</option>
+                </select>
+
+                <div className="mt-4 flex items-center space-x-4">
+                  <label className="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      checked={isExpanded}
+                      onChange={() => setIsExpanded(!isExpanded)}
+                      className="mr-2"
+                    />
+                    <span className="text-gray-900 font-bold">
+                      Add Custom Name & Number
+                    </span>
+                  </label>
+
+                  {isExpanded && (
+                    <>
+                      <input
+                        type="text"
+                        placeholder="Enter Top Name"
+                        className="p-2 border rounded-md w-40"
+                        value={formData.topName}
+                        onChange={(e) =>
+                          setFormData((prev) => ({
+                            ...prev,
+                            topName: e.target.value,
+                          }))
+                        }
+                      />
+                      <input
+                        type="text"
+                        placeholder="Enter Bottom Name"
+                        className="p-2 border rounded-md w-40"
+                        value={formData.bottomName}
+                        onChange={(e) =>
+                          setFormData((prev) => ({
+                            ...prev,
+                            bottomName: e.target.value,
+                          }))
+                        }
+                      />
+                      <input
+                        type="number"
+                        placeholder="Number"
+                        className="p-2 border rounded-md w-20"
+                        value={formData.number}
+                        onChange={(e) =>
+                          setFormData((prev) => ({
+                            ...prev,
+                            number: e.target.value,
+                          }))
+                        }
+                      />
+                    </>
+                  )}
+                </div>
+
+                <p className="text-gray-900 font-bold text-xl mt-4 text-left">
+                  {selectedProduct.price} {isExpanded && "+ $5.00"}
+                </p>
+
+                <div className="flex justify-end space-x-4 mt-auto">
+                  <button
+                    onClick={() => setSelectedProduct(null)}
+                    className="bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-gray-700"
+                  >
+                    Close
+                  </button>
+                  <button
+                    onClick={() => setShowEmailStep(true)}
+                    className="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-500"
+                  >
+                    Next
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       )}
+
       <Footer></Footer>
     </div>
   );
