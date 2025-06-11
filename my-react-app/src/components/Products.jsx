@@ -530,7 +530,11 @@ const ProductShowcase = () => {
               <h2 className="text-2xl font-bold text-left">
                 {selectedProduct.name}
               </h2>
-              <p className="text-gray-500 text-left w-2/3">
+              <p
+                className={`text-gray-500 text-left ${
+                  isExpanded ? "w-2/3" : "w-4/5"
+                }`}
+              >
                 {selectedProduct.description}
               </p>
 
@@ -582,8 +586,8 @@ const ProductShowcase = () => {
                 )}
               </div>
 
-              <p className="text-gray-900 font-bold mt-4 text-left">
-                {selectedProduct.price}
+              <p className="text-gray-900 font-bold text-xl mt-4 text-left">
+                {selectedProduct.price} {isExpanded && "+ $5.00"}
               </p>
 
               {/* Buttons Section */}
