@@ -6,7 +6,7 @@ const products = [
   {
     id: 1,
     name: "2006/07 AC Milan Home Jersey",
-    price: "$65.99",
+    price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt1-${i + 1}.png`
