@@ -494,6 +494,9 @@ const ProductShowcase = () => {
         }
       );
   };
+  useEffect(() => {
+    document.body.style.overflow = showEmailStep ? "hidden" : "auto";
+  }, [showEmailStep]);
 
   return (
     <div className="bg-gray-900 py-26 md:pt-38 md:pb-4 min-h-screen">
