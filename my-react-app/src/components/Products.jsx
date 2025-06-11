@@ -500,7 +500,7 @@ const ProductShowcase = () => {
 
   return (
     <div className="bg-gray-900 py-26 md:pt-38 md:pb-4 min-h-screen">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 md:mt-0 mt-6">
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {products.map((product, idx) => (
             <div
