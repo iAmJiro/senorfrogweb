@@ -459,6 +459,14 @@ const ProductShowcase = () => {
     number: "",
     email: "",
   });
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleBuyClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
 
   const [showEmailStep, setShowEmailStep] = useState(false);
   const handleNextStep = () => {
@@ -552,6 +560,19 @@ const ProductShowcase = () => {
           ))}
         </div>
       </div>
+      {isModalOpen && (
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-bold">Confirm Purchase</h2>
+            <button
+              onClick={handleCloseModal}
+              className="mt-4 bg-gray-900 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Product Details Modal */}
       {selectedProduct && modalImages && (
