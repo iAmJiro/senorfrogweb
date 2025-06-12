@@ -149,8 +149,7 @@ const products = [
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt14-${i + 1}.jpg`
     ),
-    description:
-      "A deep red home shirt celebrating Liverpool’s 125th anniversary",
+    description: "Was worn during their historic Copa Libertadores triumph",
   },
   {
     id: 15,
@@ -228,13 +227,13 @@ const products = [
   },
   {
     id: 22,
-    name: "Croatia 2006 Home",
+    name: "Croatia 1998 Home",
     price: "$64.99",
     images: Array.from(
       { length: 4 },
       (_, i) => `/images/shirtimages/shirt22-${i + 1}.jpg`
     ),
-    description: "This kit was worn during the 2006 FIFA World Cup",
+    description: "This kit was worn during the 1998 FIFA World Cup",
   },
   {
     id: 23,
@@ -337,7 +336,7 @@ const products = [
       (_, i) => `/images/shirtimages/shirt32-${i + 1}.jpg`
     ),
     description:
-      "This kit was worn during Portugal’s 2022 FIFA World Cup campaign",
+      "This kit was worn during Portugal’s 2026 FIFA World Cup campaign",
   },
   {
     id: 33,
@@ -556,7 +555,7 @@ const ProductShowcase = () => {
 
       {/* Product Details Modal */}
       {selectedProduct && modalImages && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black m-4 md:m-0 bg-opacity-50 p-4 md:p-10 h-[100dvh]">
+        <div className="fixed inset-0 flex items-center justify-center bg-black m-4 md:m-0 bg-opacity-50 p-4 md:p-10 h-[80dvh]">
           {showEmailStep ? (
             <div className="bg-white p-6 md:mt-16 md:p-8 rounded-lg shadow-lg w-full max-w-sm md:max-w-md lg:max-w-lg">
               <h2 className="text-xl md:text-2xl font-bold mb-4 text-center">
